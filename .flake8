@@ -1,0 +1,6 @@
+[flake8]
+extend-ignore =
+    # E302: Doble línea en blanco
+    E302,
+    # E305: Expected 2 blank lines after class or function definition
+    E305,
