@@ -11,7 +11,7 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 
 ** Definiciones elementales de funciones
 + [[./src/definiciones_por_composicion.py][Definiciones por composición sobre números, listas y booleanos]].
-+ [[./src/condicionales_guardas_y_patrones.py][Definiciones con condicionales, guardas o patrones]].
++ [[./src/condicionales_guardas_y_patrones.py][Definiciones con condicionales, guardas y patrones]].
 
 ** Definiciones por comprensión
 + [[./src/definiciones_por_comprension.py][Definiciones por comprensión]].
