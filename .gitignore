@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.aux
+*.toc
+*.log
+libro/_minted-Ejercicios-Python/
+libro/auto/Ejercicios-Python.el
+libro/auto/definiciones.el
+libro/*.png
+libro/*.tex
+libro/licencia*
+libro/Makefile
