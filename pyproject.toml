@@ -1,14 +1,18 @@
 [tool.poetry]
 name = "Ejercicios-Python"
 version = "0.1.0"
-description = "Ejercicios de programación con Python"
+description = ""
 authors = ["Jose A. Alonso <JoseA.Alonso@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+hypothesis = "^6.54.3"
+numpy = "^1.23.2"
+sympy = "^1.11.1"
+mpmath = "^1.2.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
