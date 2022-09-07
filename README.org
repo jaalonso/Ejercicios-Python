@@ -10,8 +10,8 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 * Introducción a la programación con Python
 
 ** Definiciones elementales de funciones
-+ [[./src/Definiciones_por_composicion.hs][Definiciones por composición sobre números, listas y booleanos]].
-+ [[./src/Condicionales_guardas_y_patrones.hs][Definiciones con condicionales, guardas o patrones]].
++ [[./src/definiciones_por_composicion.py][Definiciones por composición sobre números, listas y booleanos]].
++ [[./src/condicionales_guardas_y_patrones.py][Definiciones con condicionales, guardas o patrones]].
 
 ** Definiciones por comprensión
-+ [[./src/Definiciones_por_comprension.hs][Definiciones por comprensión]].
++ [[./src/definiciones_por_comprension.py][Definiciones por comprensión]].
