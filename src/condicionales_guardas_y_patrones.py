@@ -109,7 +109,7 @@ def test_equiv_xor(x, y):
 # La comprobación está al final de la relación.
 
 # ---------------------------------------------------------------------
-# Ejercicio 4. Las dimensiones de los rectángulos puede representarse
+# Ejercicio 3. Las dimensiones de los rectángulos puede representarse
 # por pares; por ejemplo, (5,3) representa a un rectángulo de base 5 y
 # altura 3.
 #
@@ -132,7 +132,7 @@ def mayorRectangulo(r1: tuple[float, float],
     return (c, d)
 
 # ---------------------------------------------------------------------
-# Ejercicio 5. Definir la función
+# Ejercicio 4. Definir la función
 #    intercambia : (tuple[A, B]) -> tuple[B, A]
 # tal que intercambia(p)  es el punto obtenido intercambiando las
 # coordenadas del punto p. Por ejemplo,
