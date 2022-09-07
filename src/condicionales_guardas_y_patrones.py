@@ -341,7 +341,7 @@ def area(a: float, b: float, c: float) -> float:
 #    interseccion : (list[float], list[float]) -> list[float]
 # tal que interseccion(i1, i2) es la intersección de los intervalos i1 e
 # i2. Por ejemplo,
-#    interseccion([],     [3, 5]   ==  []
+#    interseccion([],     [3, 5])  ==  []
 #    interseccion([3, 5], [])      ==  []
 #    interseccion([2, 4], [6, 9])  ==  []
 #    interseccion([2, 6], [6, 9])  ==  [6, 6]
