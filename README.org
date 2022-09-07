@@ -7,7 +7,7 @@ funcional con Haskell]] que se ha usado en el curso de [[https://jaalonso.github
 del Grado en Matemáticas de la Universidad de Sevilla). Están ordenadas
 según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]].
 
-* Introducción a la programación funcional con Haskell
+* Introducción a la programación con Python
 
 ** Definiciones elementales de funciones
 + [[./src/Definiciones_por_composicion.hs][Definiciones por composición sobre números, listas y booleanos]].
