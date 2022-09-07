@@ -1,0 +1,129 @@
+#+TITLE: Ejercicios de programación con Python
+#+OPTIONS: num:t
+
+Este repositorio contiene una colección de relaciones de ejercicios de
+programación con Python. Está basada en la de [[https://github.com/jaalonso/I1M-Ejercicios-Haskell][Ejercicios de programación
+funcional con Haskell]] que se ha usado en el curso de [[https://jaalonso.github.io/cursos/i1m][Informática]] (de 1º
+del Grado en Matemáticas de la Universidad de Sevilla). Están ordenadas
+según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]].
+
+* Introducción a la programación funcional con Haskell
+
+** Definiciones elementales de funciones (temas 1 a 4)
++ [[./src/Definiciones_por_composicion.hs][Definiciones por composición sobre números, listas y booleanos]].
+# + [[./src/Condicionales_guardas_y_patrones.hs][Definiciones con condicionales, guardas o patrones]].
+#
+# ** Definiciones por comprensión (tema 5)
+# + [[./src/Definiciones_por_comprension.hs][Definiciones por comprensión]].
+# + [[./src/Definiciones_por_comprension_con_cadenas_El_cifrado_Cesar.hs][Definiciones por comprensión con cadenas: El cifrado César]].
+#
+# ** Definiciones por recursión (tema 6)
+# + [[./src/Definiciones_por_recursion.hs][Definiciones por recursión]].
+# + [[./src/Operaciones_conjuntistas_con_listas.hs][Operaciones conjuntistas con listas]].
+# + [[./src/El_algoritmo_de_Luhn.hs][El algoritmo de Luhn]].
+# + [[./src/Numeros_de_Lychrel.hs][Números de Lychrel]].
+# + [[./src/Funciones_sobre_cadenas.hs][Funciones sobre cadenas]].
+# + [[./src/Codificacion_por_longitud.hs][Codificación por longitud]].
+#
+# ** Funciones de orden superior (tema 7)
+# + [[./src/Funciones_de_orden_superior_y_definiciones_por_plegados.hs][Funciones de orden superior y definiciones por plegados]].
+# + [[./src/Definiciones_por_plegados.hs][Definiciones por plegados]].
+# + [[./src/Ecuacion_con_factoriales.hs][Ecuación con factoriales]].
+# + [[./src/Enumeraciones_de_los_numeros_racionales.hs][Enumeraciones de los números racionales]].
+#
+# ** Tipos definidos y de datos algebraicos (tema 9)
+# + [[./src/Tipos_de_datos.hs][Tipos de datos]].
+# + [[./src/Tipos_de_datos_algebraicos_Arboles_binarios.hs][Tipos de datos algebraicos: Árboles binarios]].
+# + [[./src/Tipos_de_datos_algebraicos.hs][Tipos de datos algebraicos]].
+# + [[./src/Modelizacion_de_juego_de_cartas.hs][Tipos de datos: Modelización de juego de cartas]].
+# + [[./src/Mayorias_parlamentarias.hs][Mayorías parlamentarias]].
+# + [[./src/Cadenas_de_bloques.hs][Cadenas de bloques]].
+#
+# ** Listas infinitas (tema 10)
+# + [[./src/Evaluacion_perezosa_y_listas_infinitas.hs][Evaluación perezosa y listas infinitas]].
+# + [[./src/La_sucesion_de_Kolakoski.hs][La sucesión de Kolakoski]].
+# + [[./src/El_triangulo_de_Floyd.hs][El triángulo de Floyd]].
+# + [[./src/La_sucesion_de_Hamming.hs][La sucesión de Hamming]].
+#
+# ** Aplicaciones de la programación funcional (tema 11)
+# + [[./src/Aplicaciones_de_la_PF_con_listas_infinitas.hs][Aplicaciones de la programación funcional con listas infinitas]].
+#
+# ** Analizadores sintácticos (tema 12)
+# + [[./src/Analizadores_sintacticos.hs][Analizadores sintácticos]].
+#
+# ** Programas interactivos (tema 13)
+# + [[./src/El_juego_del_nim.hs][El juego del nim y las funciones de entrada/salida]].
+# + [[./src/Calculo_del_numero_pi_mediante_el_metodo_de_Montecarlo.hs][Cálculo del número pi mediante el método de Montecarlo]].
+# + [[./src/Ejercicios_con_IO.hs][Ejercicios con IO]].
+#
+# * Algorítmica
+#
+# ** Análisis de la complejidad de los algoritmos (tema 28)
+# + [[./src/Algoritmos_de_ordenacion_y_complejidad.hs][Algoritmos de ordenación y complejidad]].
+#
+# ** El tipo abstracto de datos de las pilas (tema 14)
+# + [[./src/El_TAD_de_las_pilas.hs][El tipo abstracto de dato de las pilas]].
+#
+# ** El tipo abstracto de datos de las colas (tema 15)
+# + [[./src/El_TAD_de_las_colas.hs][El tipo abstracto de datos de las colas]].
+#
+# ** El tipo abstracto de datos de los conjuntos (temas 17 y 29)
+# + [[./src/Operaciones_con_conjuntos.hs][Operaciones con conjuntos]].
+# + [[./src/Operaciones_con_conjuntos_usando_la_libreria.hs][Operaciones con conjuntos usando la librería Data.Set]].
+# + [[./src/Relaciones_binarias_homogeneas.hs][Relaciones binarias homogéneas]].
+# + [[./src/Relaciones_binarias_homogeneas_con_la_libreria.hs][Relaciones binarias homogéneas con la librería Data.Set]].
+# + [[./src/Multiconjuntos_mediante_diccionarios.hs][El tipo abstracto de los multiconjuntos mediante diccionarios]].
+#
+# ** El tipo abstracto de datos de las tablas (tema 18)
+# + [[./src/Tablas.hs][El tipo abstracto de las tablas]].
+# + [[./src/Tablas_y_diccionarios.hs][Correspondencia entre tablas y diccionarios]].
+# + [[./src/Transacciones.hs][Transacciones]].
+#
+# ** El tipo abstracto de datos de las árboles binarios de búsqueda (tema 19)
+# + [[./src/Arboles_binarios_de_busqueda.hs][Árboles binarios de búsqueda]].
+#
+# ** El tipo abstracto de datos de los montículos (tema 20)
+# + [[./src/El_TAD_de_los_monticulos.hs][El tipo abstracto de datos de los montículos]].
+#
+# ** El tipo abstracto de datos de los polinomios (tema 20)
+# + [[./src/El_TAD_de_polinomios_operaciones.hs][Operaciones con el tipo abstracto de datos de los polinomios]].
+# + [[./src/Division_y_factorizacion_de_polinomios.hs][División y factorización de polinomios mediante la regla de Ruffini]].
+#
+# ** El tipo abstracto de datos de los grafos (tema 22)
+# + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_listas.hs][Implementación del TAD de los grafos mediante listas]].
+# + [[./src/Implementacion_del_TAD_de_los_grafos_mediante_diccionarios.hs][Implementación del TAD de los grafos mediante diccionarios]].
+# + [[./src/Problemas_basicos_de_grafos.hs][Problemas básicos con el TAD de los grafos]].
+# + [[./src/Ejercicios_sobre_grafos.hs][Ejercicios sobre grafos]].
+#
+# ** Técnicas de diseño descendente de algoritmos (tema 23)
+#
+# + [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.hs][Rompecabeza del triominó mediante divide y vencerás]].
+# + [[./src/BEE_El_problema_del_granjero.hs][El problema del granjero mediante búsqueda en espacio de estado]].
+# + [[./src/El_problema_de_las_fichas_mediante_busqueda_en_espacio_de_estado.hs][El problema de las fichas mediante búsqueda en espacio de estado]].
+# + [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.hs][El problema del calendario mediante búsqueda en espacio de estado]].
+# + [[./src/Resolucion_de_problemas_mediante_busqueda_en_espacios_de_estados.hs][Resolución de problemas mediante búsqueda en espacios de estados]].
+#
+# ** Programación dinámica (temas 24 y 30)
+# + [[./src/Programación_dinamica_Caminos_en_una_reticula.hs][Programación dinámica: Caminos en una retícula]].
+# + [[./src/Programacion_dinamica_Turista_en_Manhattan.hs][Programación dinámica: Turista en Manhattan]].
+# + [[./src/Programacion_dinamica_Apilamiento_de_barriles.hs][Programación dinámica: Apilamiento de barriles]].
+# + [[./src/Camino_de_maxima_suma_en_una_matriz.hs][Camino de máxima suma en una matriz]].
+#
+# * Aplicaciones a las matemáticas
+#
+# ** Álgebra lineal
+# + [[./src/Vectores_y_matrices.hs][Vectores y matrices]].
+# + [[./src/Metodo_de_Gauss_para_triangularizar_matrices.hs][Método de Gauss para triangularizar matrices]].
+# + [[./src/Vectores_y_matrices_con_las_librerias.hs][Vectores y matrices con las librerías]].
+#
+# ** Cálculo numérico
+# + [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.hs][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
+# + [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.hs][Cálculo numérico (2): límites, bisección e integrales]].
+#
+# ** Estadística
+# + [[./src/Estadistica_descriptiva.hs][Estadística descriptiva]].
+# + [[./src/Estadistica_descriptiva_con_librerias.hs][Estadística descriptiva con librerías]].
+#
+# ** Combinatoria
+# + [[./src/Combinatoria.hs][Combinatoria]].
+# + [[./src/Combinatoria_con_librerias.hs][Combinatoria con librerías]].
