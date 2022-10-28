@@ -21,7 +21,10 @@
 
 from math import gcd, sqrt
 from typing import TypeVar
-from hypothesis import assume, given, strategies as st
+
+from hypothesis import assume, given
+from hypothesis import strategies as st
+
 A = TypeVar('A')
 B = TypeVar('B')
 

@@ -17,7 +17,10 @@
 
 from math import pi
 from typing import TypeVar
-from hypothesis import given, strategies as st
+
+from hypothesis import given
+from hypothesis import strategies as st
+
 A = TypeVar('A')
 
 # ---------------------------------------------------------------------
