@@ -18,7 +18,7 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 
 ** Definiciones por recursión
 + [[./src/definiciones_por_recursion.py][Definiciones por recursión]].
-+ [[./src/operaciones_conjuntistas_con_listas.py][Operaciones conjuntistas con listas]].
-+ [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
-+ [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
-+ [[./src/funciones_sobre_cadenas.py][Funciones sobre cadenas]].
+# + [[./src/operaciones_conjuntistas_con_listas.py][Operaciones conjuntistas con listas]].
+# + [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
+# + [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
+# + [[./src/funciones_sobre_cadenas.py][Funciones sobre cadenas]].
