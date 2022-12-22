@@ -10,6 +10,7 @@ hypothesis = "^6.54.3"
 numpy = "^1.23.2"
 sympy = "^1.11.1"
 mpmath = "^1.2.1"
+more-itertools = "^9.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2"
