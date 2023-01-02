@@ -1,19 +1,11 @@
-from src.definiciones_por_recursion import \
-    potencia, \
-    mcd, \
-    pertenece, \
-    concatenaListas, \
-    coge, \
-    sumaDeCuadradosR, \
-    sumaDeCuadradosC, \
-    digitosR, \
-    digitosC, \
-    sumaDigitosR, \
-    sumaDigitosNR, \
-    listaNumeroR, \
-    listaNumeroC, \
-    mayorExponenteR, \
-    mayorExponenteC
+from src.definiciones_por_recursion import (coge, concatenaListas, digitosC,
+                                            digitosR, listaNumeroC,
+                                            listaNumeroR, mayorExponenteC,
+                                            mayorExponenteR, mcd, pertenece,
+                                            potencia, sumaDeCuadradosC,
+                                            sumaDeCuadradosR, sumaDigitosNR,
+                                            sumaDigitosR)
+
 
 def test_recursion() -> None:
     assert potencia(2, 3) == 8
@@ -22,7 +14,7 @@ def test_recursion() -> None:
     assert pertenece(3, [2, 3, 5]) is True
     assert pertenece(4, [2, 3, 5]) is False
     assert concatenaListas([[1, 3], [5], [2, 4, 6]]) == [1, 3, 5, 2, 4, 6]
-    assert coge(3, range(4, 12)) == [4, 5, 6]
+    assert coge(3, list(range(4, 12))) == [4, 5, 6]
     assert sumaDeCuadradosR(3) == 14
     assert sumaDeCuadradosR(100) == 338350
     assert sumaDeCuadradosC(3) == 14

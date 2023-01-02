@@ -1,49 +1,25 @@
-from src.definiciones_por_comprension import \
-    suma1, \
-    suma2, \
-    sumaDeCuadrados1, \
-    sumaDeCuadrados2, \
-    euler6a, \
-    euler6b, \
-    replica, \
-    linea1, \
-    linea2, \
-    linea3, \
-    triangulo1, \
-    triangulo2, \
-    triangulo3, \
-    perfectos, \
-    numeroAbundante, \
-    numerosAbundantesMenores, \
-    todosPares, \
-    euler1, \
-    circulo1, \
-    circulo2, \
-    circulo3, \
-    circulo4, \
-    aproxE, \
-    errorAproxE, \
-    aproxLimSeno, \
-    errorLimSeno, \
-    calculaPi, \
-    errorPi, \
-    pitagoricas1, \
-    pitagoricas2, \
-    pitagoricas3, \
-    numeroDePares, \
-    conjetura, \
-    ternasPitagoricas1, \
-    ternasPitagoricas2, \
-    ternasPitagoricas3, \
-    productoEscalar, \
-    sumaConsecutivos, \
-    densa, \
-    personas, \
-    nombres, \
-    musicos, \
-    seleccion, \
-    musicos2, \
-    vivas
+from src.definiciones_por_comprension import (aproxE, aproxLimSeno, calculaPi,
+                                              circulo1, circulo2, circulo3,
+                                              circulo4, conjetura, densa,
+                                              errorAproxE, errorLimSeno,
+                                              errorPi, euler1, euler6a,
+                                              euler6b, linea1, linea2, linea3,
+                                              musicos, musicos2, nombres,
+                                              numeroAbundante, numeroDePares,
+                                              numerosAbundantesMenores,
+                                              perfectos, personas,
+                                              pitagoricas1, pitagoricas2,
+                                              pitagoricas3, productoEscalar,
+                                              replica, seleccion, suma1, suma2,
+                                              sumaConsecutivos,
+                                              sumaDeCuadrados1,
+                                              sumaDeCuadrados2,
+                                              ternasPitagoricas1,
+                                              ternasPitagoricas2,
+                                              ternasPitagoricas3, todosPares,
+                                              triangulo1, triangulo2,
+                                              triangulo3, vivas)
+
 
 def test_comprension1() -> None:
     assert suma1(3) == 6

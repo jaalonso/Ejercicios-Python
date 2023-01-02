@@ -17,52 +17,32 @@
 # Importación de librerías auxiliares                                --
 # ---------------------------------------------------------------------
 
-from abc import abstractmethod
 from functools import reduce
-from operator import concat
 from itertools import dropwhile, takewhile
+from operator import concat
 from sys import setrecursionlimit
 from timeit import Timer, default_timer
-from typing import Any, Callable, Protocol, TypeVar
+from typing import Any, Callable, TypeVar, Union
 
-from more_itertools import split_at
 from hypothesis import given
 from hypothesis import strategies as st
+from more_itertools import split_at
 from numpy import array, transpose
 
 setrecursionlimit(10**6)
 
 A = TypeVar('A')
 B = TypeVar('B')
-C = TypeVar('C', bound="Comparable")
-
-class Comparable(Protocol):
-    """Para comparar"""
-    @abstractmethod
-    def __eq__(self, other: Any) -> bool:
-        pass
-
-    @abstractmethod
-    def __lt__(self: A, other: A) -> bool:
-        pass
-
-    def __gt__(self: A, other: A) -> bool:
-        return (not self < other) and self != other
-
-    def __le__(self: A, other: A) -> bool:
-        return self < other or self == other
-
-    def __ge__(self: A, other: A) -> bool:
-        return not self < other
+C = TypeVar('C', bound=Union[int, float, str])
 
 # ---------------------------------------------------------------------
 # Ejercicio 1. Definir la función
 #    segmentos : (Callable[[A], bool], list[A]) -> list[list[A]]
 # tal que segmentos(p, xs) es la lista de los segmentos de xs cuyos
 # elementos verifican la propiedad p. Por ejemplo,
-#    >>> segmentos1((lambda x: x % 2 == 0), [1,2,0,4,9,6,4,5,7,2])
+#    >>> segmentos((lambda x: x % 2 == 0), [1,2,0,4,9,6,4,5,7,2])
 #    [[2, 0, 4], [6, 4], [2]]
-#    >>> segmentos1((lambda x: x % 2 == 1), [1,2,0,4,9,6,4,5,7,2])
+#    >>> segmentos((lambda x: x % 2 == 1), [1,2,0,4,9,6,4,5,7,2])
 #    [[1], [9], [5, 7]]
 # ---------------------------------------------------------------------
 
@@ -80,7 +60,7 @@ def segmentos1(p: Callable[[A], bool], xs: list[A]) -> list[list[A]]:
 # 2ª solución
 # ===========
 
-def segmentos(p: Callable[[A], bool], xs: list[A]) -> list[list[A]]:
+def segmentos2(p: Callable[[A], bool], xs: list[A]) -> list[list[A]]:
     return list(filter((lambda x: x), split_at(xs, lambda x: not p(x))))
 
 # Comparación de eficiencia
@@ -94,7 +74,7 @@ def tiempo(e: str) -> None:
 # La comparación es
 #    >>> tiempo('segmentos1(lambda x: x % 2 == 0, range(10**4))')
 #    0.55 segundos
-#    >>> tiempo('segmentos(lambda x: x % 2 == 0, range(10**4))')
+#    >>> tiempo('segmentos2(lambda x: x % 2 == 0, range(10**4))')
 #    0.00 segundos
 
 # ---------------------------------------------------------------------
@@ -114,7 +94,7 @@ def relacionadosC(r: Callable[[A, A], bool], xs: list[A]) -> bool:
 # ---------------------------------------------------------------------
 # Ejercicio 2.2. Definir, por recursión, la función
 #    relacionadosR : (Callable[[A, A], bool], list[A]) -> bool
-# tal que relacionadosC(r, xs) se verifica si para todo par (x,y) de
+# tal que relacionadosR(r, xs) se verifica si para todo par (x,y) de
 # elementos consecutivos de xs se cumple la relación r. Por ejemplo,
 #    >>> relacionadosR(lambda x, y: x < y, [2, 3, 7, 9])
 #    True
@@ -412,8 +392,12 @@ def filtraAplicaI(f: Callable[[A], B],
 # La propiedad es
 @given(st.lists(st.integers()))
 def test_filtraAplica(xs: list[int]) -> None:
-    f = lambda x: x + 4
-    p = lambda x: x < 3
+    def f(x: int) -> int:
+        return x + 4
+
+    def p(x: int) -> bool:
+        return x < 3
+
     r = filtraAplicaC(f, p, xs)
     assert filtraAplicaMF(f, p, xs) == r
     assert filtraAplicaR(f, p, xs) == r
@@ -426,22 +410,30 @@ def test_filtraAplica(xs: list[int]) -> None:
 # ---------------------------------------------------------------------
 
 # La comparación es
-#    >>> tiempo('filtraAplicaC(lambda x: x, lambda x: x % 2 == 0, range(10**5))')
+#    >>> tiempo('filtraAplicaC(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**5))')
 #    0.02 segundos
-#    >>> tiempo('filtraAplicaMF(lambda x: x, lambda x: x % 2 == 0, range(10**5))')
+#    >>> tiempo('filtraAplicaMF(lambda x: x, lambda x: x % 2 == 0,
+#                               range(10**5))')
 #    0.01 segundos
-#    >>> tiempo('filtraAplicaR(lambda x: x, lambda x: x % 2 == 0, range(10**5))')
+#    >>> tiempo('filtraAplicaR(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**5))')
 #    Process Python violación de segmento (core dumped)
-#    >>> tiempo('filtraAplicaP(lambda x: x, lambda x: x % 2 == 0, range(10**5))')
+#    >>> tiempo('filtraAplicaP(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**5))')
 #    4.07 segundos
-#    >>> tiempo('filtraAplicaI(lambda x: x, lambda x: x % 2 == 0, range(10**5))')
+#    >>> tiempo('filtraAplicaI(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**5))')
 #    0.01 segundos
 #
-#    >>> tiempo('filtraAplicaC(lambda x: x, lambda x: x % 2 == 0, range(10**7))')
+#    >>> tiempo('filtraAplicaC(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**7))')
 #    1.66 segundos
-#    >>> tiempo('filtraAplicaMF(lambda x: x, lambda x: x % 2 == 0, range(10**7))')
+#    >>> tiempo('filtraAplicaMF(lambda x: x, lambda x: x % 2 == 0,
+#                               range(10**7))')
 #    1.00 segundos
-#    >>> tiempo('filtraAplicaI(lambda x: x, lambda x: x % 2 == 0, range(10**7))')
+#    >>> tiempo('filtraAplicaI(lambda x: x, lambda x: x % 2 == 0,
+#                              range(10**7))')
 #    1.21 segundos
 
 # ---------------------------------------------------------------------
@@ -488,5 +480,6 @@ def test_maximo(xs: list[int]) -> None:
 # ---------------------------------------------------------------------
 
 # La comprobación es
-#    src> poetry run pytest -q funciones_de_orden_superior_y_definiciones_por_plegados.py
+#    src> poetry run pytest -q \
+#         funciones_de_orden_superior_y_definiciones_por_plegados.py
 #    1 passed in 0.74s

@@ -1,25 +1,16 @@
-from src.condicionales_guardas_y_patrones import \
-    divisionSegura1, \
-    divisionSegura2, \
-    xor1, \
-    xor2, \
-    xor3, \
-    xor4, \
-    xor5, \
-    mayorRectangulo, \
-    intercambia, \
-    distancia, \
-    ciclo, \
-    numeroMayor1, \
-    numeroMayor2, \
-    numeroDeRaices, \
-    raices, \
-    area, \
-    interseccion, \
-    formaReducida, \
-    sumaRacional, \
-    productoRacional, \
-    igualdadRacional
+from src.condicionales_guardas_y_patrones import (area, ciclo, distancia,
+                                                  divisionSegura1,
+                                                  divisionSegura2,
+                                                  formaReducida,
+                                                  igualdadRacional,
+                                                  intercambia, interseccion,
+                                                  mayorRectangulo,
+                                                  numeroDeRaices, numeroMayor1,
+                                                  numeroMayor2,
+                                                  productoRacional, raices,
+                                                  sumaRacional, xor1, xor2,
+                                                  xor3, xor4, xor5)
+
 
 def test_condicionales():
     assert divisionSegura1(7, 2) == 3.5

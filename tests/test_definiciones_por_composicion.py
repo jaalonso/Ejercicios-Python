@@ -1,30 +1,15 @@
-from src.definiciones_por_composicion import \
-    media3, \
-    sumaMonedas, \
-    volumenEsfera, \
-    areaDeCoronaCircular, \
-    ultimoDigito, \
-    maxTres, \
-    rota1a, \
-    rota1b, \
-    rota1c, \
-    rota, \
-    rango, \
-    palindromo, \
-    interior1, \
-    interior2, \
-    finales1, \
-    finales2, \
-    finales3, \
-    segmento1, \
-    segmento2, \
-    extremos, \
-    mediano, \
-    tresIguales1, \
-    tresIguales2, \
-    tresDiferentes, \
-    cuatroIguales1, \
-    cuatroIguales2
+from src.definiciones_por_composicion import (areaDeCoronaCircular,
+                                              cuatroIguales1, cuatroIguales2,
+                                              extremos, finales1, finales2,
+                                              finales3, interior1, interior2,
+                                              maxTres, media3, mediano,
+                                              palindromo, rango, rota, rota1a,
+                                              rota1b, rota1c, segmento1,
+                                              segmento2, sumaMonedas,
+                                              tresDiferentes, tresIguales1,
+                                              tresIguales2, ultimoDigito,
+                                              volumenEsfera)
+
 
 def test_definiciones_por_composicion():
     assert media3(1, 3, 8) == 4.0

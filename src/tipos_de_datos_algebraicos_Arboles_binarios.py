@@ -156,7 +156,7 @@ def profundidad(a: Arbol[A]) -> int:
 
 # La propiedad es
 @given(st.integers(min_value=1, max_value=10))
-def test_nHojas(n: int) -> None:
+def test_nNodos(n: int) -> None:
     a = arbolArbitrario(n)
     assert nNodos(a) <= 2 ** profundidad(a) - 1
 
@@ -283,8 +283,8 @@ def takeArbol(n: int, a: Arbol[A]) -> Arbol[A]:
 
 # ---------------------------------------------------------------------
 # Ejercicio 5.2. Comprobar con Hypothesis que la profundidad de
-# takeArbol(n, x) es menor o igual que n, para todo número natural n y
-# todo árbol x.
+# takeArbol(n, x) es menor o igual que n, para todo número natural n
+# y todo árbol x.
 # ---------------------------------------------------------------------
 
 # La propiedad es
@@ -324,7 +324,7 @@ def replicateArbol(n: int, x: A) -> Arbol[A]:
 # La propiedad es
 @given(st.integers(min_value=1, max_value=10),
        st.integers(min_value=1, max_value=10))
-def test_nHojas(n: int, x: int) -> None:
+def test_replicateArbol(n: int, x: int) -> None:
     assert nHojas(replicateArbol(n, x)) == 2**n
 
 # ---------------------------------------------------------------------
@@ -333,7 +333,7 @@ def test_nHojas(n: int, x: int) -> None:
 # tal que mapArbol(f, x) es el árbol obtenido aplicándole a cada nodo de
 # x la función f. Por ejemplo,
 #    >>> mapArbol(lambda x: 2 * x, N(9, N(3, H(2), H(4)), H(7)))
-#    N(x8, N(6, H(4), H(8)), H(14))
+#    N(18, N(6, H(4), H(8)), H(14))
 # ---------------------------------------------------------------------
 
 def mapArbol(f: Callable[[A], B], a: Arbol[A]) -> Arbol[B]:
@@ -346,22 +346,6 @@ def mapArbol(f: Callable[[A], B], a: Arbol[A]) -> Arbol[B]:
 
 # ---------------------------------------------------------------------
 # Ejercicio 7.2. Comprobar con Hypothesis que
-#    (mapArbol (1+)) . espejo = espejo . (mapArbol (1+))
-# ---------------------------------------------------------------------
-
-
-
-# La propiedad es
-# prop_mapArbol_espejo :: Arbol Int -> Bool
-# prop_mapArbol_espejo x =
-#     (mapArbol (1+) . espejo) x == (espejo . mapArbol (1+)) x
-#
-# La comprobación es
-#    λ> quickCheck prop_mapArbol_espejo
-#    OK, passed 100 tests.
-#
-# ---------------------------------------------------------------------
-# Ejercicio 7.3. Comprobar con Hypothesis que
 #    list(map(lambda n: 1 + n, preorden(x))) ==
 #    list(preorden(mapArbol(lambda n: 1 + n, x)))
 # ---------------------------------------------------------------------

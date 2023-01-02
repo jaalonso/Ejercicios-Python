@@ -27,7 +27,6 @@
 #
 # A los números válidos, los llamaremos números de Luhn.
 
-
 # ---------------------------------------------------------------------
 # Ejercicio 1. Definir la función
 #    digitosInv : : (int) -> list[int]

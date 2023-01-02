@@ -137,3 +137,5 @@ libro/*.png
 libro/*.tex
 libro/licencia*
 libro/Makefile
+*.bbl
+*.blg
