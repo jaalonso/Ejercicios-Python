@@ -1,4 +1,4 @@
-from src.TAD.pilaConListas import Pila, apila, cima, desapila, esVacia, vacia
+from src.TAD.pilaConDeque import Pila, apila, cima, desapila, esVacia, vacia
 
 
 def test_pila() -> None:

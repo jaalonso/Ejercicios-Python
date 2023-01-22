@@ -1,5 +1,5 @@
-# pilaConListas.py
-# Implementación de las pilas mediante listas.
+# pilaConDeque.py
+# Implementación de las pilas mediante deque.
 # José A. Alonso Jiménez <https://jaalonso.github.io>
 # Sevilla, 2-enero-2023
 # ======================================================================
@@ -57,6 +57,7 @@ __all__ = [
     'pilaAleatoria'
 ]
 
+from collections import deque
 from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import Generic, TypeVar
@@ -71,7 +72,7 @@ A = TypeVar('A')
 
 @dataclass
 class Pila(Generic[A]):
-    _elementos: list[A] = field(default_factory=list)
+    _elementos: deque[A] = field(default_factory=deque)
 
     def __str__(self) -> str:
         """
@@ -80,13 +81,13 @@ class Pila(Generic[A]):
         """
         if len(self._elementos) == 0:
             return '-'
-        return " | ".join(str(x) for x in self._elementos)
+        return ' | '.join(str(x) for x in self._elementos)
 
     def apila(self, x: A) -> None:
         """
         Agrega el elemento x al inicio de la pila.
         """
-        self._elementos.insert(0, x)
+        self._elementos.appendleft(x)
 
     def esVacia(self) -> bool:
         """
@@ -94,7 +95,7 @@ class Pila(Generic[A]):
 
         Devuelve True si la pila está vacía, False en caso contrario.
         """
-        return not self._elementos
+        return len(self._elementos) == 0
 
     def cima(self) -> A:
         """
@@ -106,7 +107,7 @@ class Pila(Generic[A]):
         """
         Elimina el elemento en la cima de la pila.
         """
-        self._elementos.pop(0)
+        self._elementos.popleft()
 
 # Funciones del tipo de las listas
 # ================================
@@ -123,9 +124,9 @@ def apila(x: A, p: Pila[A]) -> Pila[A]:
     Añade un elemento x al tope de la pila p y devuelve una copia de la
     pila modificada.
     """
-    aux = deepcopy(p)
-    aux.apila(x)
-    return aux
+    _aux = deepcopy(p)
+    _aux.apila(x)
+    return _aux
 
 def esVacia(p: Pila[A]) -> bool:
     """
@@ -144,9 +145,9 @@ def desapila(p: Pila[A]) -> Pila[A]:
     Elimina el elemento en la cima de la pilla p y devuelve una copia de la
     pila resultante.
     """
-    aux = deepcopy(p)
-    aux.desapila()
-    return aux
+    _aux = deepcopy(p)
+    _aux.desapila()
+    return _aux
 
 # Generador de pilas
 # ==================
@@ -159,7 +160,11 @@ def pilaAleatoria() -> st.SearchStrategy[Pila[int]]:
     Utiliza la librería Hypothesis para generar una lista de enteros y
     luego se convierte en una instancia de la clase pila.
     """
-    return st.lists(st.integers()).map(Pila)
+    def _creaPila(elementos: list[int]) -> Pila[int]:
+        pila: Pila[int] = vacia()
+        pila._elementos.extendleft(elementos)
+        return pila
+    return st.builds(_creaPila, st.lists(st.integers()))
 
 # Comprobación de las propiedades de las pilas
 # ============================================
@@ -173,5 +178,5 @@ def test_pila(p: Pila[int], x: int) -> None:
     assert not esVacia(apila(x, p))
 
 # La comprobación es
-#    > poetry run pytest -q pilaConListas.py
+#    > poetry run pytest -q pilaConQueue.py
 #    1 passed in 0.25s
