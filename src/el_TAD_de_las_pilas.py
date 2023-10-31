@@ -9,7 +9,7 @@
 # ---------------------------------------------------------------------
 
 # El objetivo de esta relación de ejercicios es definir funciones sobre
-# el tipo abstracto de datos de las pilas, utilizando las
+# el tipo abstracto de datos de las pilas, utilizando la
 # implementación del ejercicio anterior, cuyo código es
 # pilaConListas.py que se encuentra en https://bit.ly/3VVt8by
 
