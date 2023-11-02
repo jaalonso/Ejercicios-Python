@@ -75,4 +75,4 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 + [[./src/DivideVenceras.py][Algoritmo divide y vencerás]].
 + [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.py][Rompecabeza del triominó mediante divide y vencerás]].
 + [[./src/BusquedaEnProfundidad.py][Búsqueda en espacios de estados por profundidad]].
-`[[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (mediante espacios de estados)]].
++ [[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (mediante espacios de estados)]].
