@@ -18,7 +18,61 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 
 ** Definiciones por recursión
 + [[./src/definiciones_por_recursion.py][Definiciones por recursión]].
-# + [[./src/operaciones_conjuntistas_con_listas.py][Operaciones conjuntistas con listas]].
-# + [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
-# + [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
-# + [[./src/funciones_sobre_cadenas.py][Funciones sobre cadenas]].
++ [[./src/operaciones_conjuntistas_con_listas.py][Operaciones conjuntistas con listas]].
++ [[./src/el_algoritmo_de_Luhn.py][El algoritmo de Luhn]].
++ [[./src/numeros_de_Lychrel.py][Números de Lychrel]].
++ [[./src/funciones_sobre_cadenas.py][Funciones sobre cadenas]].
+
+** Funciones de orden superior
++ [[./src/funciones_de_orden_superior_y_definiciones_por_plegados.py][Funciones de orden superior y definiciones por plegados]].
+
+** Tipos definidos y de datos algebraicos
++ [[./src/tipos_de_datos_algebraicos_Arboles_binarios.py][Tipos de datos algebraicos: Árboles binarios]].
++ [[./src/tipos_de_datos_algebraicos_Arboles.py][Tipos de datos algebraicos: Árboles]].
++ [[./src/tipos_de_datos_algebraicos_Expresiones.py][Tipos de datos algebraicos: Expresiones]].
+
+* Algorítmica
+
+** El tipo abstracto de datos de las pilas
++ [[./src/TAD/pila.py][El tipo abstracto de datos (TAD) de las pilas]].
++ [[./src/TAD/pilaConListas.py][Implementación del TAD de las pilas mediante listas]].
++ [[./src/TAD/pilaConDeque.py][Implementación del TAD de las pilas mediante deque]].
++ [[./src/el_TAD_de_las_pilas.py][Ejercicios con el TAD de las pilas]].
+
+** El tipo abstracto de datos de las colas
++ [[./src/TAD/cola.py][El tipo abstracto de datos (TAD) de las colas]].
++ [[./src/TAD/colaConListas.py][Implementación del TAD de las colas mediante listas]].
++ [[./src/TAD/colaConDosListas.py][Implementación del TAD de las colas mediante dos listas]].
++ [[./src/TAD/colaConDeque.py][Implementación del TAD de las colas mediante deque]].
++ [[./src/el_TAD_de_las_colas.py][Ejercicios con el TAD de las colas]].
+
+** El tipo abstracto de datos de los conjuntos
++ [[./src/TAD/conjunto.py][El tipo abstracto de datos (TAD) de los conjuntos]].
++ [[./src/TAD/conjuntoConListasNoOrdenadasConDuplicados.py][Implementación del TAD de los conjuntos mediante listas no ordenadas con duplicados]].
++ [[./src/TAD/conjuntoConListasNoOrdenadasSinDuplicados.py][Implementación del TAD de los conjuntos mediante listas no ordenadas sin duplicados]].
++ [[./src/TAD/conjuntoConListasOrdenadasSinDuplicados.py][Implementación del TAD de los conjuntos mediante listas ordenadas sin duplicados]].
++ [[./src/TAD/conjuntoConLibreria.py][Implementación del TAD de los conjuntos mediante librería]].
++ [[./src/operaciones_con_conjuntos.py][Operaciones con conjuntos]].
+
+** Relaciones binarias homogéneas
++ [[./src/relaciones_binarias_homogeneas.py][Relaciones binarias homogéneas]].
+
+** El tipo abstracto de datos de los polinomios
++ [[./src/TAD/Polinomio.py][El tipo abstracto de datos (TAD) de los polinomios]].
++ [[./src/TAD/PolRepDensa.py][Implementación del TAD de los polinomios mediante listas densas]].
++ [[./src/TAD/PolRepDispersa.py][Implementación del TAD de los polinomios mediante listas dispersas]].
++ [[./src/El_TAD_de_polinomios_operaciones.py][Operaciones con el tipo abstracto de datos de los polinomios]].
++ [[./src/Division_y_factorizacion_de_polinomios.py][División y factorización de polinomios mediante la regla de Ruffini]].
+
+** El tipo abstracto de datos de los grafos
++ [[./src/TAD/Grafo.py][El tipo abstracto de datos (TAD) de los grafos]].
++ [[./src/TAD/GrafoConListaDeAdyacencia.py][Implementación del TAD de los grafos mediante listas]].
++ [[./src/Problemas_basicos_de_grafos.py][Problemas básicos con el TAD de los grafos]].
++ [[./src/Algoritmos_sobre_grafos.py][Algoritmos sobre grafos]].
++ [[./src/Ejercicios_sobre_grafos.py][Ejercicios sobre grafos]].
+
+** Técnicas de diseño descendente de algoritmos
++ [[./src/DivideVenceras.py][Algoritmo divide y vencerás]].
++ [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.py][Rompecabeza del triominó mediante divide y vencerás]].
++ [[./src/BusquedaEnProfundidad.py][Búsqueda en espacios de estados por profundidad]].
+`[[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (mediante espacios de estados)]].
