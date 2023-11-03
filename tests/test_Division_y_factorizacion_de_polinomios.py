@@ -1,9 +1,12 @@
-from src.Division_y_factorizacion_de_polinomios import \
-    (terminoIndep, ruffiniDensa, cocienteRuffini, restoRuffini,
-     esRaizRuffini,
-     raicesRuffini, factorizacion)
-
+from src.Division_y_factorizacion_de_polinomios import (cocienteRuffini,
+                                                        esRaizRuffini,
+                                                        factorizacion,
+                                                        raicesRuffini,
+                                                        restoRuffini,
+                                                        ruffiniDensa,
+                                                        terminoIndep)
 from src.TAD.Polinomio import consPol, polCero
+
 
 def test_division_polinomios() -> None:
     ejPol1 = consPol(4, 3, consPol(2, 5, consPol(0, 3, polCero())))

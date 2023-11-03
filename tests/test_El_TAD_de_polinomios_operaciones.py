@@ -1,14 +1,27 @@
-from src.El_TAD_de_polinomios_operaciones import \
-    (densaAdispersa, densaAdispersa2, densaAdispersa3, dispersaAdensa,
-     dispersaAdensa2, dispersaAdensa3, dispersaApolinomio,
-     dispersaApolinomio2, polinomioAdispersa, coeficiente,
-     densaApolinomio, densaApolinomio2, polinomioAdensa,
-     polinomioAdensa2, creaTermino, creaTermino2, termLider, termLider2,
-     sumaPol, sumaPol2, multPol, valor, esRaiz, derivada, restaPol,
-     potencia, potencia2, potencia3, integral, integralDef, multEscalar,
-     cociente, resto, divisiblePol, horner, horner2)
-
+from src.El_TAD_de_polinomios_operaciones import (cociente, coeficiente,
+                                                  creaTermino, creaTermino2,
+                                                  densaAdispersa,
+                                                  densaAdispersa2,
+                                                  densaAdispersa3,
+                                                  densaApolinomio,
+                                                  densaApolinomio2, derivada,
+                                                  dispersaAdensa,
+                                                  dispersaAdensa2,
+                                                  dispersaAdensa3,
+                                                  dispersaApolinomio,
+                                                  dispersaApolinomio2,
+                                                  divisiblePol, esRaiz, horner,
+                                                  horner2, integral,
+                                                  integralDef, multEscalar,
+                                                  multPol, polinomioAdensa,
+                                                  polinomioAdensa2,
+                                                  polinomioAdispersa, potencia,
+                                                  potencia2, potencia3,
+                                                  restaPol, resto, sumaPol,
+                                                  sumaPol2, termLider,
+                                                  termLider2, valor)
 from src.TAD.Polinomio import Polinomio, consPol, polCero
+
 
 def test_TAD_polinomios_1() -> None:
     for densaAdispersa_ in [densaAdispersa, densaAdispersa2,
