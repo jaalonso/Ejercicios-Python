@@ -71,8 +71,23 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 + [[./src/Algoritmos_sobre_grafos.py][Algoritmos sobre grafos]].
 + [[./src/Ejercicios_sobre_grafos.py][Ejercicios sobre grafos]].
 
-** Técnicas de diseño descendente de algoritmos
+** Procedimiento de divide y vencerás
 + [[./src/DivideVenceras.py][Algoritmo divide y vencerás]].
 + [[./src/Rompecabeza_del_triomino_mediante_divide_y_venceras.py][Rompecabeza del triominó mediante divide y vencerás]].
+
+** Problemas con búsquedas en espacio de estados
 + [[./src/BusquedaEnProfundidad.py][Búsqueda en espacios de estados por profundidad]].
-+ [[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (mediante espacios de estados)]].
++ [[./src/BEE_Reinas_Profundidad.py][El problema de las n reinas (por profundidad)]].
++ [[./src/BusquedaEnAnchura.py][Búsqueda en espacios de estados por anchura]].
++ [[./src/BEE_Reinas_Anchura.py][El problema de las n reinas (por anchura)]].
++ [[./src/BEE_Mochila.py][El problema de la mochila]].
++ [[./src/BusquedaPrimeroElMejor.py][Búsqueda por primero el mejor]].
++ [[./src/BPM_8Puzzle.py][El problema del 8 puzzle]].
++ [[./src/BusquedaEnEscalada.py][Búsqueda en escalada]].
++ [[./src/Escalada_Prim.py][El algoritmo de Prim del árbol de expansión mínimo]].
++ [[./src/BEE_El_problema_del_granjero.py][El problema del granjero]].
++ [[./src/BEE_El_problema_de_las_fichas.py][El problema de las fichas]].
++ [[./src/El_problema_del_calendario_mediante_busqueda_en_espacio_de_estado.py][El problema del calendario]].
++ [[./src/El_problema_del_domino.py][El problema del dominó]].
++ [[./src/Problema_de_suma_cero.py][El problema de suma cero]].
++ [[./src/Problema_de_las_jarras.py][El problema de las jarras]].
