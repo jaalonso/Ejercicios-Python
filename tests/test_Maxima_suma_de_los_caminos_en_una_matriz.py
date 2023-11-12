@@ -1,0 +1,3 @@
+from src.Maxima_suma_de_los_caminos_en_una_matriz import test_maximaSuma
+
+test_maximaSuma()
