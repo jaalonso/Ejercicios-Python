@@ -91,3 +91,14 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 + [[./src/El_problema_del_domino.py][El problema del dominó]].
 + [[./src/Problema_de_suma_cero.py][El problema de suma cero]].
 + [[./src/Problema_de_las_jarras.py][El problema de las jarras]].
+
+** Programación dinámica
++ [[./src/La_funcion_de_Fibonacci_por_programacion_dinamica.py][La función de Fibonacci por programación dinámica]]
++ [[./src/Coeficientes_binomiales.py][Coeficientes binomiales]]
++ [[./src/Longitud_SCM.py][Longitud de la subsecuencia común máxima]].
++ [[./src/Subsecuencia_comun_maxima.py][Subsecuencia común_máxima]].
++ [[./src/Levenshtein.py][La distancia Levenshtein (con programación dinámica)]].
++ [[./src/Programacion_dinamica_Caminos_en_una_reticula.py][Caminos en una retícula (con programación dinámica)]].
++ [[./src/Caminos_en_una_matriz.py][Caminos en una matriz]].
++ [[./src/{Maxima_suma_de_los_caminos_en_una_matriz.py][Máxima suma de los caminos en una matriz]].
++ [[./src/Camino_de_maxima_suma_en_una_matriz.py][Camino de máxima suma en una matriz]].
