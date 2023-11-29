@@ -102,3 +102,8 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 + [[./src/Caminos_en_una_matriz.py][Caminos en una matriz]].
 + [[./src/Maxima_suma_de_los_caminos_en_una_matriz.py][Máxima suma de los caminos en una matriz]].
 + [[./src/Camino_de_maxima_suma_en_una_matriz.py][Camino de máxima suma en una matriz]].
+
+* Aplicaciones a las matemáticas
+
+** Cálculo numérico
++ [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.py][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
