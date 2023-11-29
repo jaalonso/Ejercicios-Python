@@ -398,11 +398,11 @@ def test_kruskal() -> None:
     assert kruskal(g2) == [(32,2,5),(13,1,2),(12,2,4),(11,1,3)]
     assert kruskal(g3) == [(9,5,7),(7,2,3),(6,1,6),(5,4,5),(5,1,2),(3,5,6)]
     assert kruskal(g4) == [(9,5,7),(6,1,6),(5,4,5),(5,1,2),(3,5,6),(1,3,5)]
-    print("Vefificado")
+    print("Verificado")
 
 # La verificación es
 #    >>> test_kruskal()
-#    Vefificado
+#    Verificado
 
 # ---------------------------------------------------------------------
 # Ejercicio 4. El [algoritmo de Prim](https://bit.ly/466fwRe) calcula un
