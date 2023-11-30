@@ -107,3 +107,4 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 
 ** Cálculo numérico
 + [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.py][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
++ [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.py][Cálculo numérico (2): Límites, bisección e integrales]].
