@@ -108,3 +108,21 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 ** Cálculo numérico
 + [[./src/Calculo_numerico_Diferenciacion_y_metodos_de_Heron_y_de_Newton.py][Cálculo numérico: Diferenciación y métodos de Herón y de Newton]].
 + [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.py][Cálculo numérico (2): Límites, bisección e integrales]].
+
+** Miscelánea
++ [[../Exercitium-Python/src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
++ [[../Exercitium-Python/src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
++ [[../Exercitium-Python/src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
++ [[../Exercitium-Python/src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
++ [[../Exercitium-Python/src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
++ [[../Exercitium-Python/src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
++ [[../Exercitium-Python/src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
++ [[../Exercitium-Python/src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
++ [[../Exercitium-Python/src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
++ [[../Exercitium-Python/src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
++ [[../Exercitium-Python/src/Primos_cubanos.py][Primos cubanos]].
++ [[../Exercitium-Python/src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
++ [[../Exercitium-Python/src/Suma_de_cadenas.py][Suma de cadenas]].
++ [[../Exercitium-Python/src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
++ [[../Exercitium-Python/src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].
++ [[../Exercitium-Python/src/Suma_de_fila_del_triangulo_de_los_impares.py][Suma de fila del triángulo de los impares]].
