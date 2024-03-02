@@ -110,19 +110,19 @@ según los [[https://jaalonso.github.io/cursos/i1m/temas.html][temas del curso]]
 + [[./src/Calculo_numerico_2_Limites_biseccion_e_integrales.py][Cálculo numérico (2): Límites, bisección e integrales]].
 
 ** Miscelánea
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Primos_cubanos.py][Primos cubanos]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Suma_de_cadenas.py][Suma de cadenas]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].
-+ [[https://github.com/jaalonso/Exercitium-Python/src/Suma_de_fila_del_triangulo_de_los_impares.py][Suma de fila del triángulo de los impares]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Numeros_de_Pentanacci.py][Números de Pentanacci]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/El_teorema_de_Navidad_de_Fermat.py][El teorema de Navidad de Fermat]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Numeros_primos_de_Hilbert.py][Números primos de Hilbert]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Factorizaciones_de_numeros_de_Hilbert.py][Factorizaciones de números de Hilbert]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Representaciones_de_un_numero_como_suma_de_dos_cuadrados.py][Representaciones de un número como suma de dos cuadrados]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/La_serie_de_Thue_Morse.py][La serie de Thue-Morse]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/La_sucesion_de_Thue_Morse.py][La sucesión de Thue-Morse]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Huecos_maximales_entre_primos.py][Huecos maximales entre primos]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/La_funcion_indicatriz_de_Euler.py][La función indicatriz de Euler]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Ceros_finales_del_factorial.py][Ceros finales del factorial]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Primos_cubanos.py][Primos cubanos]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Cuadrado_mas_cercano.py][Cuadrado más cercano]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Suma_de_cadenas.py][Suma de cadenas]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Sistema_factoradico_de_numeracion.py][Sistema factorádico de numeración]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Duplicacion_de_cada_elemento.py][Duplicación de cada elemento]].
++ [[https://github.com/jaalonso/Exercitium-Python/blob/main/src/Suma_de_fila_del_triangulo_de_los_impares.py][Suma de fila del triángulo de los impares]].
